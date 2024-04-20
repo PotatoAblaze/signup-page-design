@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="whole-container">
+        <div class="image-panel">
+            <div class="title-box">
+                <img src="image.png" alt="Odin Logo" class="odin-image">
+                <div class="title title-text">
+                    ODIN
+                </div>
+            </div>
+        </div>
+        <div class="form-panel">
+            <div class="form-box">
+                <div class="appeal-message">
+                    <p class="message-text">
+                        This is not a real online service!
+                        You know you need something to help you realize your deepest dreams.
+                        Signup <em>now</em> to get started.
+                    </p>
+                    <p class="message-text">You know you want to.</p>
+                </div>
+                <div class="form-controls light-background">
+                    <div class="message-text">Let's do this!</div>
+                    <form id="signup-form">
+                        <div class="controls-box">
+                            <div class="controls-column">
+                                <ul>
+                                    <li>
+                                        <label for="first_name" class="form-label">FIRST NAME</label>
+                                        <input type="text" name="first_name" id="first_name" required>
+    
+                                    </li>
+                                    <li>
+                                        <label for="email" class="form-label">EMAIL</label>
+                                        <input type="email" name="email" id="email">
+                                        <div class="error" id="email_error"></div>
+                                    </li>
+                                    <li>
+                                        <label for="password" class="form-label">PASSWORD</label>
+                                        <input type="password" name="password" id="password" required>
+                                        <div class="error" id="password_error"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="controls-column">
+                                <ul>
+                                    <li>
+                                        <label for="last_name" class="form-label">LAST NAME</label>
+                                        <input type="text" name="last_name" id="last_name">
+                                    </li>
+                                    <li>
+                                        <label for="phone_number" class="form-label">PHONE NUMBER</label>
+                                        <input type="tel" name="phone_number" id="phone_number">
+                                    </li>
+                                    <li>
+                                        <label for="confirm_password" class="form-label">CONFIRM PASSWORD</label>
+                                        <input type="password" name="confirm_password" id="confirm_password" required>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="submission">
+                    <button type="submit" class="submit-button" form="signup-form">
+                        Create Account
+                    </button>
+
+                    <div>
+                        Already have an account? <a href="">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
